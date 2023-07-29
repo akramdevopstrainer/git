@@ -1,3 +1,55 @@
+1. Create a new repository on GitHub with the name "demo01" and set it to be a public repository.
+   - This step is performed on the GitHub website. It creates a new repository with the specified name and sets it as a public repository so that anyone on the internet can see the contents of the repository.
+
+2. On your local machine, open a terminal and create a new directory named "demo01" using the `mkdir` command.
+   - This step is done in your local machine's terminal or command prompt. The `mkdir` command stands for "make directory" and is used to create a new directory with the given name "demo01".
+
+3. Change to the newly created directory using the `cd` command.
+   - The `cd` command stands for "change directory" and is used to navigate to the "demo01" directory that was just created. By executing this command, you will be inside the "demo01" directory, and any further commands will be executed in this directory.
+
+4. Create a new file named "code1" using the `vi` editor.
+   - The `vi` editor is a text editor available in most Unix-like systems. It allows you to create and edit files in the terminal. The command `vi code1` creates a new file named "code1" and opens it in the `vi` editor for editing.
+
+5. In the `vi` editor, press 'i' to enter the insert mode. In this mode, you can edit the file content.
+   - `vi` has two primary modes: command mode and insert mode. In command mode, you can navigate the file and execute editor commands. In insert mode, you can actually edit the content of the file. By pressing 'i', you enter the insert mode and can start typing or making changes to the file.
+
+6. Once you're done editing the file, press 'Esc' to exit the insert mode.
+   - Pressing the 'Esc' key takes you back to the command mode from the insert mode, allowing you to execute editor commands again.
+
+7. Save and exit the file by typing `:wq` or `Shift + zz` in `vi`.
+   - In command mode, you can save the changes and exit `vi` by typing `:wq` and then pressing 'Enter'. Alternatively, you can press 'Shift + zz', which performs the same action of saving and quitting the editor.
+
+Now, let's proceed with the Git setup:
+
+8. Initialize the Git repository in the "demo01" directory using the `git init` command.
+   - The `git init` command initializes a new Git repository in the "demo01" directory. It sets up the necessary Git infrastructure to track changes in files within the directory.
+
+9. Set up your user profile using the `git config` commands to configure your name and email.
+   - The `git config` command is used to set configuration options for Git. In this step, you are setting your name and email address, which will be associated with your commits in the repository.
+
+10. Check the user profile using `git config --global user.name` and `git config --global user.email`.
+    - These commands are used to check the values of your Git configuration options. The `--global` flag indicates that the configuration is applied globally for all repositories on your machine.
+
+11. Check the status of the Git repository using `git status`.
+    - The `git status` command displays the current state of the repository, showing which files have been modified, which files are staged for the next commit, and any other relevant information.
+
+12. Add the file "code1" to the staging area using the `git add` command.
+    - The `git add` command is used to add changes in the working directory to the staging area. By running `git add code1`, you are staging the changes made to the "code1" file, indicating that you want to include these changes in the next commit.
+
+13. Commit the changes with a commit message using the `git commit -m "first commit"` command.
+    - The `git commit` command is used to create a new commit in the repository, which records the changes that were staged in the previous step. The `-m` flag allows you to provide a commit message to describe the changes made in this commit.
+
+14. Rename the branch to "main" using `git branch -M main`.
+    - This step is optional and depends on your Git version. In some cases, the default branch name might be "master," but it's a good practice to rename it to "main" to avoid problematic terminology.
+
+15. Add a remote repository named "origin" using `git remote add origin <repository_url>`. Replace `<repository_url>` with your GitHub repository URL.
+    - The `git remote add` command adds a new remote repository named "origin" to your local Git configuration. The "origin" is a conventional name for the main remote repository. You need to replace `<repository_url>` with the URL of your GitHub repository.
+
+16. Push the code to the remote repository's "main" branch using `git push -u origin main`.
+    - The `git push` command is used to send your local commits to the remote repository. By executing this command, you are pushing the code to the "main" branch of the remote repository named "origin." The `-u` flag sets the upstream branch, so in the future, you can simply use `git push` without specifying the branch and repository.
+
+
+
 # On GitHub: Create a new repository named "demo01" as a public repository.
 
 # On your laptop:

@@ -1,0 +1,46 @@
+# On GitHub: Create a new repository named "demo01" as a public repository.
+
+# On your laptop:
+# Create a new directory named "demo01".
+mkdir demo01
+
+# Change to the "demo01" directory.
+cd demo01
+
+# Create a new file named "code1" and edit it using the 'vi' editor.
+vi code1
+# Press 'i' to enter insert mode and make changes to the file.
+# Press 'Esc' to exit insert mode.
+# Type ':wq' or press 'Shift + zz' to save and exit the file.
+
+# Initialize the Git repository.
+git init
+
+# Set up your user profile for Git.
+git config --global user.name "akramdevops"
+git config --global user.email "akramdevops@gmail.com"
+
+# Check your Git user profile.
+git config --global user.email
+# Output: akramdevops@gmail.com
+git config --global user.name
+# Output: akramdevops
+
+# Check the status of the Git repository.
+git status
+
+# Add the file "code1" to the staging area.
+git add code1
+
+# Commit the changes with a commit message.
+git commit -m "first commit"
+
+# Rename the branch to "main".
+git branch -M main
+
+# Add a remote repository named "origin".
+git remote add origin https://github.com/akramdevopstrainer/demo01.git
+# Replace the URL with your GitHub repository URL.
+
+# Push the code to the remote repository's "main" branch.
+git push -u origin main
